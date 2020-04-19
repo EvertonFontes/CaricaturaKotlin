@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        android:contentDescription="Foto"
+        android:src="@drawable/foto"
+        android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_toRightOf="@+id/imagem"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idade"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_toRightOf="@+id/imagem"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/nome"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/profissao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profissão"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_toRightOf="@+id/imagem"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/idade"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
